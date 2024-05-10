@@ -35,7 +35,7 @@
         }
         .achievements {
             padding: 5px 0;
-            background-color: #344e41;
+            background-color: #780000;
             color: white;
         }
         .supportImg {
@@ -50,7 +50,7 @@
 
         .promise {
             padding: 5px 0;
-            background-color: #003049;
+            background-color: #22223b;
             color: white;
             margin: auto;
             text-align: center;
@@ -82,21 +82,38 @@
 
     /* =========== Responsiveness ========= */
     @media screen and (max-width: 600px) {
-    /* .main-container {
+        h1    {
+            font-size: 25px;
+        }
+         p {
+            font-size: 14px;
+        }
         
-    } */
-
-    /* .supportImg img {
-        
-    } */
-    .achievements , .promise , .moto {
+        .achievements , .promise , .moto {
             font-size: 18px;
         }
-    .last-line {
-        font-size: 14px;
+        .last-line {
+            font-size: 16px;
+        }
     }
-}
-    </style>
+    @media screen and (max-width: 480px) {
+        h1   {
+            font-size: 20px;
+        }
+        p {
+            font-size: 13px;
+        }
+        .achievements , .promise , .moto {
+            font-size: 16px;
+        }
+
+        .last-line {
+            font-size: 10px;
+        }
+    }
+
+</style>
+
 </head>
 <body>
     <div class="main-container">
@@ -119,7 +136,7 @@
                 <li>Distributed reusable face masks to every IOA member during COVID under challenging logistics.</li>
                 <li>Exposed election malpractices of previous IOA elections and won litigation in Delhi High Court.</li>
           </ol>
-          <h1><div class="promise">Promise:</div></h1>
+          <h1><div class="promise">Promises:</div></h1>
           <ol style="text-align: left; padding: 0 30px;">
             <li>Clean and corruption-free IOA</li>
             <li>Regularize all Fellowship selection criteria and selection on strict merit and good credentials of the applicant</li>
