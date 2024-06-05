@@ -3,218 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extension: IOA Member Declaration Deadline Extended to May 15</title>
+    <title>Form with Validation</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
-        background-color: #fafafa;
-    }
-
-    /* ======== common css ====== */
-    h1 , h2 , h3 , h4 {
-        text-align: center;
-    }
-
-    p {
-        padding: 0  20px;
-        text-align: justify;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .main-container {
-        max-width: 600px;
-        margin: auto;
-        border: 5px solid #00002b;
-        border-radius: 5px;
-        /* text-align: center; */
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        background-color: #c5ccfe;
-        /* color: white; */
-    }
-
-    .updates {
-        font-size: 20px;
-        padding: 10px 50px;
-        background-color: red  ;
-        text-align: center;
-        color: yellow;
-        font-weight: 700;
-    }
-    
-    .dr-name {
-        padding: 10px 50px;
-        background-color: #00002b;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-    }
-    
-    .drImg {
-        border-radius: 10px;
-    }
-    
-    .voteMsg {
-        padding: 10px 50px;
-        background-color: #023047;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 25px;
-    }
-
-    .servedMsg {
-        padding: 10px 50px;
-        background-color: #344e41;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 21px;
-    }
-
-    .moto {
-        padding: 10px 50px;
-        background-color: #9e0059;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 20px;
-    }
-
-
-    .link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #05668d;
-            color: white;
-            text-decoration: none;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 8px 10px;
+            margin-bottom: 10px;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
-
-        .link:hover {
-            background-color: #d9005b;
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-
-
-    .last-line{
-        padding: 10px 40px;
-        background-color: #344e41;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 15px;
-    }
-    /* ======= Responsive Media Queries ======= */
-     /* ======= Responsive Media Queries ======= */
-     @media screen and (max-width: 600px) {
-        h2   {
-            font-size: 20px;
+        input[type="submit"]:hover {
+            background-color: #218838;
         }
-        p {
-            font-size: 14px;
+        .error {
+            color: red;
+            font-size: 0.9em;
         }
-
-        .updates {
-            font-size: 15px;
-        }
-        .dr-name {
-            font-size: 25px;
-        }
-       .servedMsg ,.voteMsg , .moto {
-        font-size: 15px;
-
-       } 
-
-        .last-line {
-            font-size: 10px;
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        h2   {
-            font-size: 18px;
-        }
-        p {
-            font-size: 13px;
-        }
-        .updates {
-            font-size: 13px;
-        }
-        
-        .dr-name {
-            font-size: 18px;
-        }
-
-        .servedMsg ,.voteMsg , .moto {
-        font-size: 13px;
-
-       } 
-        .last-line {
-            font-size: 8px;
-        }
-    }
-
     </style>
 </head>
 <body>
-    <div class="main-container">
-        <!-- Timer Img  -->
-        <img src="https://gifcdn.com/e1o6cs3ib9j60rj2d1j.gif" alt="mailtimers.com" width="100%">
-        <div class="updates">Extension of Submission Deadline for IOA Member Declarations and Rectification Period !</div>
-        <h1><div class="dr-name"> Dr. Manish Dhawan </div> </h1>
-        <div style="text-align: center;"><img class="drImg" src="https://github.com/techiedharam/Email-Template-html/blob/master/asset/New_Photo_Dr_Manish.jpg?raw=true" alt="" width="150px"></div>
-        <h2> <div class="voteMsg"> Vote for Your Own Candidate for IOA Secretary 2023 🙋</div></h2>
-        <h2> <div class="servedMsg"> Served you all as Honorary Treasurer IOA for 6 years ( 2015-2020)</div></h2>
-        <h2 class="esteemed-member">Dear Esteemed Members, Seniors and Teachers,</h2>
-        <h2>*|FNAME|*</h2>
-        <p>
-            With folded hands humbly request you  to vote for Dr Manish Dhawan for Honorary Secretary IOA, 2023. He has served you as Honorary Treasurer IOA for 6 years from 2015 to 2020. During his tenure as Treasurer, Dr Manish Dhawan was given the task of renovation of IOA, which was successfully completed. He fought legal battle against Election malpractices of IOA elections 2020 in the Delhi High Court with Dr P.V Vijayraghwan, Dr A.K Sinha, Dr S Samantha and Dr S Adke and came out victorious. Malpractice was proved in the court of law. <br><br>
-            In the last few years dead and inactive members data was manipulated, i.e., mobile and Emails, they were changed and the fake votes were cast. This was totally against Democratic principles. Honorable Delhi High Court has appointed Justice Retd J R Midha to purify voter list and hold free and fair Elections. <br> <br>
-            The data verification process has started and will end on May 15th 11.59 PM. It is utmost important to undergo verification process, which is simple and takes only few minutes to do it. This is required to participate in the Election process and this corrected data will help IOA to send you future communications.
-        </p>
-        <h2 style="color: red;">Before clicking verification, link have following ready:</h2>
-        <!-- Steps to update the membership data  -->
-        <ol>
-            <li>Your LM number should be 5 digits. Add leading zeros if necessary, e.g., LM01234. If you don’t remember your LM number, visit the IOA website.</li>
-            <li>Download your E-Aadhar PDF copy from the Aadhar website and save it on your desktop. The link only allows E-PDF Aadhar from the website.</li>
-            <li>
-              <p>Keep the following medical registration details handy:</p>
-              <ul>
-                <li>Medical registration number</li>
-                <li>Center/State</li>
-                <li>Year of passing</li>
-                <li>Institute</li>
-              </ul>
-            </li>
-          </ol>
-          
-          <p style="font-weight: 600; text-align: center;"><a class="link" href="https://globaleysurvey.ey.com/jfe/form/SV_7QIOwZLkJsO35mC"> <img src="https://media.tenor.com/DloYoakaD_UAAAAi/backhand-index-pointing-right-joypixels.gif" alt="" style="width: 30px; margin-top: -10px;">Registration</a></p>                         
 
-          <p style="text-align: center;">READ INSTRUCTION CAREFULLY MENTIONED AND GO THROUGH THE PROCESS</p>
-          <h3 style="text-align: center;">Follow the video below to complete your Verification of your IOA Election 2023</h3>
-          <a href="https://youtu.be/_fbJkyF8DNE?si=cCBXv8SBzeF1t41U">
-            <img src="https://github.com/techiedharam/Email-Template-html/blob/master/asset/YTImg.png?raw=true" width="100%" alt="">
-         </a>
+<form id="myForm" onsubmit="return validateForm()">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required minlength="2" maxlength="100">
 
-         <h2><div class="moto">My Motto as IOA Secretary will be of <br>
-            ‘ Service Before Self ’</div>
-        </h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required minlength="8">
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" required min="18" max="100">
+
+    <input type="submit" value="Submit">
+    <div class="error" id="error-msg"></div>
+</form>
+
+<script>
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const age = document.getElementById('age').value;
+        const errorMsg = document.getElementById('error-msg');
         
-         <h2>1. Know your Candidate</h2>
-         <p style="font-weight: 600; text-align: center;"><a class="link" href="https://drive.google.com/uc?export=download&id=1VDklhdt7QjxxT2prtSQM3wW3GlMpnWLc" download onclick="autoDownloadPDF()"> <img src="https://media.tenor.com/DloYoakaD_UAAAAi/backhand-index-pointing-right-joypixels.gif" alt="" style="width: 30px; margin-top: -10px;"> Link of Booklet</a></p>
-         
-         <h2>Achievements as Honorary Treasurer IOA for 6 years <br> ( 2015-2020)</h2>
-         <p style="color: #fff; font-weight: 600; text-align: center;"> <a class="link"  href="https://singular-smakager-1c3e5c.netlify.app/"><img src="https://media.tenor.com/DloYoakaD_UAAAAi/backhand-index-pointing-right-joypixels.gif" alt="" style="width: 40px; height: 30px;  margin-top: -10px;">Visit Link </a></p>
+        errorMsg.innerHTML = '';
 
-         <p style="text-align: center; font-weight: 700;">In case of problem contact Helpline:</p>
-         <p style="text-align: center; font-weight: 700; ">Email: ioamemberverification@in.ey.com</p>
-         <p style="text-align: center; font-weight: 700;">Mobile: 9821727847</p>
-         <h2 style="text-align: center; font-weight: 700;">THANK YOU 🙏</h2>
-         <h4 class="last-line">CLEAN, VIBRANT AND ACADEMICAALY ACCLAIMED IOA</div></h4>
-    </div>
+        if (!name || name.length < 2 || name.length > 100) {
+            errorMsg.innerHTML += 'Name must be between 2 and 100 characters.<br>';
+            return false;
+        }
+
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!email || !emailPattern.test(email)) {
+            errorMsg.innerHTML += 'Please enter a valid email address.<br>';
+            return false;
+        }
+
+        if (!password || password.length < 8) {
+            errorMsg.innerHTML += 'Password must be at least 8 characters long.<br>';
+            return false;
+        }
+
+        if (!age || age < 18 || age > 100) {
+            errorMsg.innerHTML += 'Age must be between 18 and 100.<br>';
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
 </body>
 </html>
