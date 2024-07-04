@@ -1,193 +1,210 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-<title>Exciting Developments in Ilizarov Deformity Correction</title>
-<style type="text/css">
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>Events HTML Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Open Sans', Arial, sans-serif;
-        background-color: #f4f4f4;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        background: #f1f1f1;        
+        font-family: "Roboto", sans-serif;
     }
-    table {
-        border-collapse: collapse;
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #ffffff;
-        border: 1px solid #999999;
-    }
-    .email-container {
-        padding: 20px;
-    }
-    .header {
-        background-color: #f0f0f0;
-        padding: 15px 20px;
-        font-weight: 700;
-    }
-    .header td {
-        width: 80%;
-    }
-    .header .contact-links {
-        text-align: right;
-        padding: 0 20px;
-    }
-    .header .contact-links a {
-        text-decoration: none;
-        color: black;
-        margin-right: 15px;
-    }
-    .header .contact-links a:last-child {
-        margin-right: 0;
-    }
-    .header .contact-links a:hover {
-        text-decoration: underline;
-    }
-    .header img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .content {
-        padding: 20px;
-        text-align: center;
-    }
-    .content h1, .content h2 {
-        margin: 10px 0;
-        font-family: 'Open Sans', Arial, sans-serif;
-    }
-    .content p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-    .content a {
-        text-decoration: none;
-        color: red;
-    }
-    .content a:hover {
-        text-decoration: underline;
-    }
-    .undertaking-form {
-        text-align: center;
-        padding: 20px;
-    }
-    .undertaking-form a {
-        text-decoration: none;
-        background-color: #ff006e;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        display: inline-block;
-    }
-    .undertaking-form a:hover {
-        background-color: #d80062;
-    }
-    .notice img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .footer {
-        background-color: #f0f0f0;
-        color: #000;
-        text-align: center;
-        padding: 20px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-    .footer h2 {
-        margin: 0;
-        font-size: 18px;
-    }
-    .footer p {
-        margin: 10px 0;
-        font-size: 14px;
-        line-height: 1.6;
-    }
-    .footer a {
+
+    /* ===== Global CSS ====== */
+    #email-container{
+            width: 600px;
+            margin: auto;
+            /* padding: 20px; */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    .top-links a {
+        color: #4e4c4c;
         text-decoration: none;
     }
-    .footer a:hover {
-        text-decoration: underline;
+
+    .social-icons img {
+        width: 30px;
+        margin: 0 10px;
     }
+     
 </style>
+
 </head>
 <body>
-<table class="email-container" cellpadding="0" cellspacing="0" border="0" align="center">
-    <!-- Header -->
-    <tr class="header">
-        <td style="padding: 15px 0;">Dr. Manish Dhawan</td>
-        <td class="contact-links">
-            <a href="https://drive.google.com/file/d/17aK7YGN7IICTyXu9erUopCVdqye2xj4W/view?usp=sharing">Notice</a>
-            <a href="tel:+9811128288">Contact</a>
-        </td>
-    </tr>
+    <div id="email-container">
+        <table id="main-table" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            
+            <!-- ========== Top Header HTML Started ========== -->
+            <tr style="padding: 40px; background-color: #edf2f4;">
+                <td class="logo" style="width: 35%; padding: 15px 20px;">    
+                   <strong> Dr. Manish Dhawan </strong>
+                </td>
+                <td class="top-links" style="width: 65%; text-align: right; padding-right: 25px;">
+                    <a href="https://drive.google.com/uc?export=download&id=1VDklhdt7QjxxT2prtSQM3wW3GlMpnWLc">Details | </a>
+                    <a href="tel:+9811128288">Contact</a>
+                </td>
+            </tr>
+            <!-- ========== Top Header HTML Ended ========== -->
+            
+            <!-- ========== Banner Section Started ========== -->
+            <tr>
+                <td colspan = "2" style ="text-align: center; background-size: cover; background-repeat: no-repeat;">
+                    <h2>Dear Esteemed Seniors, Teachers and Friends,</h2>
+                    <h2>*|FNAME|*</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2" style ="text-align: center; ">
+                    <img src="https://dailytrojan.com/wp-content/uploads/2018/09/DT-VoteAnim2.gif" width="100%"  height="350px"/>
+                </td>
+            </tr>
+            <tr>
+                
+                <td  style ="width: 70%; text-align: center; padding-left: 20px;">
+                    <h1>
+                        <span style="color: darkred;">I</span> 
+                        <span style="color: darkblue;">want</span> 
+                        <span style="color: darkgreen;">your</span> 
+                        <span style="color: darkorange;">full</span> 
+                        <span style="color: darkviolet;">support</span> 
+                        <span style="color: darkcyan;">for</span> 
+                        <span style="color: darkbrown;">my</span> 
+                        <span style="color: darkmagenta;">candidature</span> 
+                        <span style="color: darkslateblue;">as</span> 
+                        <span style="color: darkgoldenrod;">Honorary</span> 
+                        <span style="color: darkolivegreen;">Secretary</span> 
+                        <span style="color: red;">IOA,</span> 
+                        <span style="color: darkkhaki;">2023</span>
+                    </h1>
+                </td>
 
-    <!-- Header Image -->
-    <tr>
-        <td colspan="2">
-            <img src="https://t3.ftcdn.net/jpg/04/51/58/68/360_F_451586836_NNmw4WcMDEaPQHrtAzL6kRFNunp4eq1e.jpg" alt="">
-        </td>
-    </tr>
+                <td style="width: 30%; padding:10px;">
+                    <img src="https://github.com/techiedharam/Email-Template-html/blob/master/asset/dr_Img_1.jpg?raw=true" width="90%" height="170px" alt="" style="border: 2px solid #d90429; border-radius: 0 10px;">
+                </td>
 
-    <!-- Body -->
-    <tr class="content">
-        <td colspan="2">
-            <h1>Dear Esteemed Member</h1>
-            <h2>*|FNAME|*</h2>
-            <p>
-                You are partially verified for your IOA registration. To complete the process, please send scanned copies of the following documents to
-                <a href="mailto:ioamemberverification@in.ey.com">ioamemberverification@in.ey.com</a>
-                by 24 June 2024 - 11:59 PM:
-            </p>
-            <p>
-                👉 Undertaking form<br>
-                👉 Unmasked Aadhar (without password)<br>
-                👉 Post-graduate degree or diploma<br>
-                👉 National or State Medical Council registration
-            </p>
-            <p>
-                Submitting these documents promptly will help us finalize your verification. If you have any questions or need further assistance, please do not hesitate to contact us. Thank you for your cooperation.
-            </p>
-        </td>
-    </tr>
+            </tr>   
+            
+            <!-- ========== Banner Section Ended ========== -->
+            
+            <!-- ========== Body Section Started =========== -->
+            <tr>
+                <td colspan = "2" style="padding: 0 15px; text-align: center; font-weight: 450;">
+                    <p style="font-size: 20px;"> I thank you all for your enormous Love, Support and Encouragement for me. On persuasion and confidence reposed by you members, I am contesting for the post of Honorary Secretary IOA 2023. </p>                    
+                    <h1>
+                        <span style="color: red;">TOGATHER</span> 
+                        <span style="color: blue;">WE WORK AND</span> 
+                        <span style="color: green;">SHAPE THE FUTURE OF</span> 
+                        <span style="color: orange;">IOA</span>
+                      </h1>
+                </td>
+            </tr>
+            <!-- ========== Body Section Ended =========== -->
+            
+            <!-- ========= Achievements Section Started ======== -->
+            <tr>
+                <td  colspan = "2">
+                    <h2 style="text-align: center; padding: 10px; background-color: #03045e; color: white;" >My Major Achievement are Listed Below:</h2>
+                    <ol style="padding: 0 40px;">
+                        <li>My major contribution academically is the spread and dissemination of Ilizarov technology throughout India by organizing Ilizarov and Deformity Correction Courses. I have served as Secretary ASAMI India for 6 years, Vice President for 2 years, and President for 2 years in the year 2018-2020.</li>
+                        <li>Started IOA PG training program and conducted more than 60 webinars for postgraduate training during the Covid period.</li>
+                        <li>I served you all as Honorary Treasurer  (2015 to 2020) for 6 years, bringing powerful experience in handling IOA affairs.</li>
+                        <li>Renovation of IOA house and installation of a lift.</li>
+                        <li>Merger of IJO and IOA accounts.</li>
+                        <li>Digitalization of newsletters.</li>
+                        <li>Increased IOA funds by 2 crores.</li>
+                        <li>Distributed reusable face masks to every IOA member during Covid under very difficult logistics.</li>
+                    </ol>
+                    
+                </td>
+            </tr>
+            <!-- ========= Achievements Section Ended ========= -->
+            
+            <!-- ========= Promises Section Started ======== -->
+            <tr>
+                <td  colspan = "2">
+                    <h2 style="text-align: center; padding: 10px; background-color: #9e0059; color: white;" > I Promise:</h2>
+                    <ol>
+                        <li>Academics is the most important function of IOA and I will do everything to uphold its excellence nationally and internationally.</li>
+                        <li>Regularize all fellowship selection criteria and ensure selection is based on strict merit and good credentials of the applicant.</li>
+                        <li>Improve coordination in center-state activities.</li>
+                        <li>Coordinate with the Honorary Treasurer to increase the wealth of IOA, drawing on my previous experience.</li>
+                    </ol>
+                    <h3 style="padding: 0 20px; text-align: center; color: #9e0059;">I want your full support for my candidature as <span style="color: #89023e;"> Honorary Secretary IOA, 2023. </span> We all will work together. Vote for person who has worked for your rights. Every vote counts and I need your full support 🙏</h3>                    
+                </td>
+            </tr>
+            <tr>
+                <td  colspan = "2">
+                <img src="https://github.com/techiedharam/Email-Template-html/blob/master/asset/vote_poster_1.jpg?raw=true" alt="" width="100%">                   
+                </td>
+            </tr>
+            <!-- ========= Promises Section Ended ========= -->
 
-    <!-- Undertaking Form Download -->
-    <tr class="undertaking-form">
-        <td colspan="2">
-            <a href="https://drive.google.com/file/d/1MR1l2BdU4aGCkRToJc-zFM9V3Igh2Y87/view?usp=sharing" download>
-                Click to download Undertaking Form ⬇️⬇️⬇️
-            </a>
-        </td>
-    </tr>
+            <!-- ============= Support Video Started ==============  -->
+            
+            <tr>
+                <td  colspan = "2">
+                    <a href="https://youtu.be/JNITBY8bo6o?si=_nCWal1qoudiatxi">
+                        <img src="https://github.com/techiedharam/Email-Template-html/blob/master/asset/vote_for_Dr_Manish_Dhawan.png?raw=true" alt="" width="100%">                
+                    </a>
+                </td>
+            </tr>
+            <!-- ============= Support Video Ended ==============  -->
+            
+            <!-- ============ Footer Footer Started =========== -->
+            <tr>
+                <td colspan="2" style="background-color: #edede9; text-align: center; font-size: 14px; padding: 20px 0;">
+                    <h2>Prof. (Dr.) Manish Dhawan </h2>
+                    <p>Professor and Senior Consultant 
+                        |  Unit Head
+                        |  Sir Gangaram Hospital 
+                        |  New Delhi
+                    </p>  
+                    <h3>Past President ASAMI India 
+                        <br> Past Treasurer  IOA
+                    </h3>
+                    <p>Teaching Co-ordinartor DNB 
+                        Sir Gangaram Hospital 
+                    </p>   
+                    
+                    <p>
+                        Chairman Club Foot Committee
+                        Rotary RCDS,District 3011
+                    </p>
+                    <p> <b>Mobile Number</b> - 9811128288 </p>
+                    <a href="mailto:drmanishdhawan@gmail.com" style="text-decoration: none;"><b>Email Id:</b> drmanishdhawan@gmail.com</a>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.facebook.com" style="margin: 0 10px; text-decoration: none; color: #3b5998;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" style="margin: 0 10px; text-decoration: none; color: #00acee;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com" style="margin: 0 10px; text-decoration: none; color: #c13584;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" style="margin: 0 10px; text-decoration: none; color: #0e76a8;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com" style="margin: 0 10px; text-decoration: none; color: #FF0000;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+        
+                </td>                
+            </tr>
+            <!-- ============ Footer Footer Ended =========== -->
 
-    <!-- Notice Images -->
-    <tr class="notice">
-        <td colspan="2">
-            <img src="https://github.com/techiedharam/Email-Template-html/blob/master/Partially%20Verified%2023-6-2024/IOA%20Notice%201.jpg?raw=true" alt="">
-            <img src="https://github.com/techiedharam/Email-Template-html/blob/master/Partially%20Verified%2023-6-2024/IOA%20Notice%202.jpg?raw=true" alt="">
-        </td>
-    </tr>
-
-    <!-- Footer -->
-    <tr class="footer">
-        <td colspan="2">
-            <h2>Dr. Manish Dhawan</h2>
-            <p>
-                Professor and Senior Consultant<br>
-                Sir Ganga Ram Hospital, New Delhi-110070<br>
-                Mobile: <a href="tel:+9811128288">9811128288</a><br>
-                Email: <a href="mailto:drmanishdhawan@gmail.com">drmanishdhawan@gmail.com</a>
-            </p>
-        </td>
-    </tr>
-</table>
+        </table>
 </body>
 </html>
